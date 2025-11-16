@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strix K9 Player - Professional Video Player for Modern Web</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Strix K9 Player - Next-generation video player with DRM protection, dynamic subtitles, customizable branding, and professional-grade controls. Built for developers who demand excellence in web video playback.">
+    <meta name="keywords" content="video player, web video player, HTML5 video, DRM protection, video streaming, customizable player, modern video player, professional video player, video.js alternative, plyr alternative">
+    <meta name="author" content="Strix K9 Player">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Strix K9 Player - Professional Video Player for Modern Web">
+    <meta property="og:description" content="Experience the ultimate video playback with DRM protection, dynamic subtitles, customizable branding, and professional-grade controls. Built for developers who demand excellence.">
+    <!-- <meta property="og:image" content="https://your-domain.com/images/og-image.jpg">
+    <meta property="og:url" content="https://your-domain.com"> -->
+    <meta property="og:site_name" content="Strix K9 Player">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Strix K9 Player - Professional Video Player for Modern Web">
+    <meta name="twitter:description" content="Next-gen video player with DRM protection, dynamic subtitles, and customizable branding for modern web applications.">
+    <!-- <meta name="twitter:image" content="https://your-domain.com/images/twitter-card.jpg"> -->
+    <meta name="twitter:creator" content="@strixk9player">
+    <meta name="twitter:site" content="@strixk9player">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#19a383">
+    <meta name="msapplication-TileColor" content="#19a383">
+    <meta name="application-name" content="Strix K9 Player">
+    <meta name="apple-mobile-web-app-title" content="Strix K9 Player">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'none'; base-uri 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://your-domain.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Strix K9 Player",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web Browser",
+        "description": "Professional video player for modern web applications with DRM protection, dynamic subtitles, and customizable branding.",
+        "url": "https://your-domain.com",
+        "author": {
+            "@type": "Organization",
+            "name": "Strix K9 Player Team"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "150"
+        },
+        "features": [
+            "DRM Protection",
+            "Smart Subtitles",
+            "Custom Branding",
+            "Responsive Design",
+            "High Performance",
+            "Developer Friendly API"
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/strixk9-player.min.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-play-circle"></i>
+                <span>Strix K9 Player</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#docs">Documentation</a>
+                <button class="btn-primary" onclick="scrollToDocs()">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Next-Gen <span class="gradient-text">Video Player</span>
+                    <br>for Modern Web
+                </h1>
+                <p class="hero-description">
+                    Experience the ultimate video playback with DRM protection, dynamic subtitles,
+                    customizable branding, and professional-grade controls. Built for developers who demand excellence.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary large" onclick="scrollToDocs()">
+                        <i class="fas fa-code"></i>
+                        Get Started
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50ms</span>
+                        <span class="stat-label">Load Time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="video-preview">
+                    <div class="video-container" id="player"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need for professional video playback</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>DRM Protection</h3>
+                    <p>Multi-DRM support with Widevine, PlayReady, and FairPlay for enterprise-grade content protection.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-closed-captioning"></i>
+                    </div>
+                    <h3>Smart Subtitles</h3>
+                    <p>Dynamic subtitle support with WebVTT format, custom styling, and multi-language capabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Custom Branding</h3>
+                    <p>Fully customizable player with dynamic logos, themes, and positioning options for your brand.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Perfect playback on all devices with adaptive controls and mobile-optimized interactions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gauge-high"></i>
+                    </div>
+                    <h3>High Performance</h3>
+                    <p>Optimized for speed with hardware acceleration, smart buffering, and minimal CPU usage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Developer Friendly</h3>
+                    <p>Clean APIs, comprehensive documentation, and extensive customization options for developers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configuration Guide Section -->
+    <section id="docs" class="config-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2>Configuration Guide</h2>
+                <p>Complete setup options for Strix K9 Player</p>
+            </div>
+
+            <div class="config-tabs">
+                <div class="config-tab active" data-tab="quick-setup">Quick Setup</div>
+                <div class="config-tab" data-tab="video-sources">Video Sources & Quality</div>
+                <div class="config-tab" data-tab="advanced-features">Advanced Features</div>
+                <div class="config-tab" data-tab="complete-example">Complete Example</div>
+            </div>
+
+            <!-- Quick Setup Tab -->
+            <div class="config-content active" id="quick-setup">
+                <div class="config-header">
+                    <h3>Quick Setup</h3>
+                    <p>Get started with minimal configuration</p>
+                </div>
+                <div class="config-body">
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">1</div>
+                            <h4 class="config-step-title">Include Required Files</h4>
+                        </div>
+                        <p class="config-step-description">Add the player script and stylesheet to your HTML file.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">HTML</span>
+                                <button class="copy-btn" data-code="include-code">Copy</button>
+                            </div>
+                            <code id="include-code">
+                                &lt;!-- Include player files --&gt;<br/>
+                                &lt;script src="main.js"&gt;&lt;/script&gt;<br/>
+                                &lt;link rel="stylesheet" href="style.css"&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">2</div>
+                            <h4 class="config-step-title">Create Player Container</h4>
+                        </div>
+                        <p class="config-step-description">Add a container element where the player will be rendered.
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">HTML</span>
+                                <button class="copy-btn" data-code="container-code">Copy</button>
+                            </div>
+                            <code id="container-code">
+                                &lt;!-- Player container --&gt;<br/>
+                                &lt;div id="player"&gt;&lt;/div&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">3</div>
+                            <h4 class="config-step-title">Initialize Player</h4>
+                        </div>
+                        <p class="config-step-description">Initialize the player with basic configuration.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">JavaScript</span>
+                                <button class="copy-btn" data-code="init-code">Copy</button>
+                            </div>
+                            <code id="init-code">
+                                // Basic player configuration<br/>
+                                const config = {<br/>
+                                &nbsp;&nbsp;video: {<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;default: "video.mp4",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;poster: "poster.jpg"<br/>
+                                &nbsp;&nbsp;},<br/>
+                                &nbsp;&nbsp;theme: { color: "#19a383" }<br/>
+                                };<br/><br/>
+                                // Initialize player<br/>
+                                const player = new ModernVideoPlayer('#player', config);
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-actions">
+                        <button class="btn-primary" onclick="switchTab('video-sources')">
+                            Next: Video Sources & Quality <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Sources & Quality Tab -->
+            <div class="config-content" id="video-sources">
+                <div class="config-header">
+                    <h3>Video Sources & Quality</h3>
+                    <p>Configure multiple quality options and branding</p>
+                </div>
+                <div class="config-body">
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">1</div>
+                            <h4 class="config-step-title">Multiple Quality Options</h4>
+                        </div>
+                        <p class="config-step-description">Provide multiple video quality options for adaptive
+                            streaming.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">JavaScript</span>
+                                <button class="copy-btn" data-code="quality-code">Copy</button>
+                            </div>
+                            <code id="quality-code">
+                                video: {<br/>
+                                &nbsp;&nbsp;default: "video-1080p.mp4",<br/>
+                                &nbsp;&nbsp;poster: "poster.jpg",<br/>
+                                &nbsp;&nbsp;playerTitle: "My Player",<br/><br/>
+                                &nbsp;&nbsp;// Multiple qualities<br/>
+                                &nbsp;&nbsp;quality: ["1080p", "720p", "480p"],<br/>
+                                &nbsp;&nbsp;source: {<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"1080p": "video-1080p.mp4",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"720p": "video-720p.mp4",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"480p": "video-480p.mp4"<br/>
+                                &nbsp;&nbsp;}<br/>
+                                }
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">2</div>
+                            <h4 class="config-step-title">Custom Logo</h4>
+                        </div>
+                        <p class="config-step-description">Add your brand logo with customizable position and behavior.
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">JavaScript</span>
+                                <button class="copy-btn" data-code="logo-code">Copy</button>
+                            </div>
+                            <code id="logo-code">
+                                // Custom logo configuration<br/>
+                                playerLogo: {<br/>
+                                &nbsp;&nbsp;src: "logo.png",<br/>
+                                &nbsp;&nbsp;position: "bottom end", // Options: "top start", "top end", "bottom start", "bottom end"<br/>
+                                &nbsp;&nbsp;width: "100px",<br/>
+                                &nbsp;&nbsp;opacity: "0.9",<br/>
+                                &nbsp;&nbsp;href: "https://site.com" // Optional link<br/>
+                                }
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-actions">
+                        <button class="btn-secondary" onclick="switchTab('quick-setup')">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button class="btn-primary" onclick="switchTab('advanced-features')">
+                            Next: Advanced Features <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Features Tab -->
+            <div class="config-content" id="advanced-features">
+                <div class="config-header">
+                    <h3>Advanced Features</h3>
+                    <p>Enable subtitles, waveform, and additional player options</p>
+                </div>
+                <div class="config-body">
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">1</div>
+                            <h4 class="config-step-title">Subtitles & Captions</h4>
+                        </div>
+                        <p class="config-step-description">Add multi-language subtitles with WebVTT format.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">JavaScript</span>
+                                <button class="copy-btn" data-code="subtitles-code">Copy</button>
+                            </div>
+                            <code id="subtitles-code">
+                                // Subtitles configuration<br/>
+                                subtitles: {<br/>
+                                &nbsp;&nbsp;enabled: true,<br/>
+                                &nbsp;&nbsp;default: "en",<br/>
+                                &nbsp;&nbsp;tracks: [<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;{ src: "en.vtt", srclang: "en", label: "English" },<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;{ src: "es.vtt", srclang: "es", label: "Español" }<br/>
+                                &nbsp;&nbsp;]<br/>
+                                }
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">2</div>
+                            <h4 class="config-step-title">Player Options</h4>
+                        </div>
+                        <p class="config-step-description">Configure player behavior and appearance.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">JavaScript</span>
+                                <button class="copy-btn" data-code="options-code">Copy</button>
+                            </div>
+                            <code id="options-code">
+                                // Player behavior options<br/>
+                                autoplay: false,<br/>
+                                loop: false,<br/>
+                                preload: "metadata",<br/>
+                                thumbnailPreview: true,<br/>
+                                waveform: true,<br/><br/>
+                                // Theme customization<br/>
+                                theme: { color: "#19a383" }
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">3</div>
+                            <h4 class="config-step-title">DRM Protection (Enterprise)</h4>
+                        </div>
+                        <p class="config-step-description">Enable DRM for protected content (Enterprise feature).</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">JavaScript</span>
+                                <button class="copy-btn" data-code="drm-code">Copy</button>
+                            </div>
+                            <code id="drm-code">
+                                // DRM configuration<br/>
+                                drm: {<br/>
+                                &nbsp;&nbsp;enabled: true,<br/>
+                                &nbsp;&nbsp;widevine: { licenseUrl: "license-server.com" },<br/>
+                                &nbsp;&nbsp;playready: { licenseUrl: "license-server.com" },<br/>
+                                &nbsp;&nbsp;fairplay: {<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;licenseUrl: "license-server.com",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;certificateUrl: "certificate-server.com"<br/>
+                                &nbsp;&nbsp;}<br/>
+                                }
+                            </code>
+                        </div>
+                        <div class="config-note">
+                            <p><i class="fas fa-info-circle"></i> DRM features require enterprise licensing. Contact
+                                sales for more information.</p>
+                        </div>
+                    </div>
+
+                    <div class="config-actions">
+                        <button class="btn-secondary" onclick="switchTab('video-sources')">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button class="btn-primary" onclick="switchTab('complete-example')">
+                            Next: Complete Example <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complete Example Tab -->
+            <div class="config-content" id="complete-example">
+                <div class="config-header">
+                    <h3>Complete Example</h3>
+                    <p>Full configuration with all features</p>
+                </div>
+                <div class="config-body">
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">1</div>
+                            <h4 class="config-step-title">Complete Configuration</h4>
+                        </div>
+                        <p class="config-step-description">A comprehensive example showcasing all available options.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">JavaScript</span>
+                                <button class="copy-btn" data-code="complete-code">Copy</button>
+                            </div>
+                            <code id="complete-code">
+                                const playerConfig = {<br/>
+                                &nbsp;&nbsp;video: {<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;default: "videos/main-1080p.mp4",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;poster: "images/poster.jpg",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;playerTitle: "Professional Player",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;quality: ["1080p", "720p", "480p"],<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;source: {<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"1080p": "videos/main-1080p.mp4",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"720p": "videos/main-720p.mp4",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"480p": "videos/main-480p.mp4"<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;},<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;playerLogo: {<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: "images/logo.png",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: "bottom end",<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: "100px"<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;},<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;subtitles: {<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enabled: true,<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tracks: [<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ src: "subs/en.vtt", srclang: "en", label: "English" }<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                                &nbsp;&nbsp;},<br/>
+                                &nbsp;&nbsp;theme: { color: "#19a383" },<br/>
+                                &nbsp;&nbsp;thumbnailPreview: true,<br/>
+                                &nbsp;&nbsp;waveform: true<br/>
+                                };<br/><br/>
+                                // Initialize player<br/>
+                                const player = new ModernVideoPlayer('#videoContainer', playerConfig);<br/><br/>
+                                // Available methods:<br/>
+                                // player.togglePlay(), player.setVolume(0.5)<br/>
+                                // player.seek(30), player.toggleFullscreen()
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-step">
+                        <div class="config-step-header">
+                            <div class="step-badge">2</div>
+                            <h4 class="config-step-title">Player Methods</h4>
+                        </div>
+                        <p class="config-step-description">Control the player programmatically with these methods.</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">JavaScript</span>
+                                <button class="copy-btn" data-code="methods-code">Copy</button>
+                            </div>
+                            <code id="methods-code">
+                                // Control playback<br/>
+                                player.togglePlay();  // Toggle play/pause<br/>
+                                player.setVolume(0.5); // Set volume (0-1)<br/>
+                                player.seek(30);      // Seek to 30 seconds<br/>
+                                player.toggleFullscreen(); // Toggle fullscreen<br/><br/>
+                                // Subtitle controls<br/>
+                                player.toggleSubtitles(); // Toggle subtitles on/off<br/>
+                                player.setSubtitle('en'); // Set subtitle language<br/><br/>
+                                // Logo controls<br/>
+                                player.updateLogoConfig({ opacity: '0.7' }); // Update logo<br/>
+                                player.getCurrentLogoConfig(); // Get current logo config
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="config-actions">
+                        <button class="btn-secondary" onclick="switchTab('advanced-features')">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button class="btn-primary" onclick="scrollToTop()">
+                            <i class="fas fa-rocket"></i> Start Building
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Strix K9 Player</span>
+                    </div>
+                    <p>Professional video player for modern web applications</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Developers</h4>
+                        <a href="#docs">Documentation</a>
+                        <a href="#api">API Reference</a>
+                        <a href="#examples">Examples</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#help">Help Center</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#community">Community</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Strix K9 Player. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/js/strixk9-player.min.js"></script>
+    
+    <!-- Script Protection Layer -->
+    <script>
+        // Anti-tampering and obfuscation protection
+        (function() {
+            'use strict';
+            
+            // Domain validation
+            const _0x4d8f = ['localhost', '127.0.0.1', 'your-domain.com'];
+            const _0x2a1e = window.location.hostname;
+            if (!_0x4d8f.some(_0x1b3c => _0x2a1e.includes(_0x1b3c))) {
+                document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>Access Denied</h1><p>This content is not authorized for this domain.</p></div>';
+                return;
+            }
+            
+            // Console protection
+            const _0x3f2d = console.log;
+            const _0x8e4a = console.warn;
+            const _0x7c1b = console.error;
+            
+            console.log = console.warn = console.error = function() {
+                const _0x9d5e = new Error().stack;
+                if (_0x9d5e && _0x9d5e.includes('devtools')) {
+                    document.body.style.display = 'none';
+                    alert('Developer tools detected. Access denied.');
+                }
+            };
+            
+            // Disable right-click
+            document.addEventListener('contextmenu', _0x6f8c => _0x6f8c.preventDefault());
+            
+            // Disable F12, Ctrl+Shift+I, Ctrl+U
+            document.addEventListener('keydown', function(_0x5a7b) {
+                if (_0x5a7b.keyCode === 123 || 
+                    (_0x5a7b.ctrlKey && _0x5a7b.shiftKey && _0x5a7b.keyCode === 73) ||
+                    (_0x5a7b.ctrlKey && _0x5a7b.keyCode === 85)) {
+                    _0x5a7b.preventDefault();
+                    return false;
+                }
+            });
+            
+            // Detect DevTools
+            setInterval(function() {
+                const _0x1f8e = window.outerHeight - window.innerHeight > 200 ||
+                               window.outerWidth - window.innerWidth > 200;
+                if (_0x1f8e) {
+                    document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>Developer Tools Detected</h1><p>Please close developer tools to continue.</p></div>';
+                }
+            }, 1000);
+            
+            // Obfuscated main functions
+            const _0xa1b2 = {
+                _0x4c5d: function(_0xe6f7) {
+                    document.querySelectorAll('.config-content').forEach(_0x8g9h => {
+                        _0x8g9h.classList.remove('active');
+                    });
+                    document.querySelectorAll('.config-tab').forEach(_0x2i3j => {
+                        _0x2i3j.classList.remove('active');
+                    });
+                    document.getElementById(_0xe6f7).classList.add('active');
+                    document.querySelector(`.config-tab[data-tab="${_0xe6f7}"]`).classList.add('active');
+                    document.getElementById('docs').scrollIntoView({behavior: 'smooth', block: 'start'});
+                },
+                
+                _0x7k8l: function() {
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                },
+                
+                _0x9m0n: function() {
+                    document.getElementById('docs').scrollIntoView({behavior: 'smooth', block: 'start'});
+                },
+                
+                _0x1o2p: function() {
+                    const _0x3q4r = document.getElementById('player');
+                    const _0x5s6t = {
+                        video: {
+                            default: atob('dmlkZW9zLzEyMzQ3MjAubXA0'),
+                            poster: atob('aHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9KdUJxZDFQYzBFVS9ocWRlZmF1bHQuanBnP3NxcD0tb2F5bXdFbkNQWUJFSW9CU0ZyeXE0cXBBeGtJQVJVQUFJaENHQUhZQVFIaUFRb0lHQkFDR0FZNEFVQUImcnM9QU9uNENMQVdxWXdJVURUdzdQb0dDMWlmeWpkMExSZmlldzs='),
+                            quality: ['720p',],
+                            source: {
+                                '720p': atob('dmlkZW9zLzEyMzQ3MjAubXA0'),
+                            }
+                        },
+                        theme: { color: '#19a383' }
+                    };
+                    const _0x7u8v = new StrixK9Player('#player', _0x5s6t);
+                }
+            };
+            
+            // Event handlers with protection
+            document.addEventListener('DOMContentLoaded', function() {
+                try {
+                    // Tab switching
+                    document.querySelectorAll('.config-tab').forEach(_0x9w0x => {
+                        _0x9w0x.addEventListener('click', function() {
+                            const _0x1y2z = this.getAttribute('data-tab');
+                            _0xa1b2._0x4c5d(_0x1y2z);
+                        });
+                    });
+                    
+                    // Copy functionality with protection
+                    document.querySelectorAll('.copy-btn').forEach(_0x3a4b => {
+                        _0x3a4b.addEventListener('click', function() {
+                            const _0x5c6d = this.getAttribute('data-code');
+                            const _0x7e8f = document.getElementById(_0x5c6d);
+                            const _0x9g0h = _0x7e8f.textContent;
+                            
+                            navigator.clipboard.writeText(_0x9g0h).then(() => {
+                                const _0x1i2j = this.textContent;
+                                this.textContent = 'Copied!';
+                                this.classList.add('copied');
+                                
+                                setTimeout(() => {
+                                    this.textContent = _0x1i2j;
+                                    this.classList.remove('copied');
+                                }, 2000);
+                            }).catch(_0x3k4l => {
+                                // Silently handle errors
+                            });
+                        });
+                    });
+                    
+                    // Navigation with protection
+                    document.querySelectorAll('.nav-links a[href^="#"]').forEach(_0x5m6n => {
+                        _0x5m6n.addEventListener('click', function(_0x7o8p) {
+                            _0x7o8p.preventDefault();
+                            const _0x9q0r = this.getAttribute('href').substring(1);
+                            const _0x1s2t = document.getElementById(_0x9q0r);
+                            if (_0x1s2t) {
+                                _0x1s2t.scrollIntoView({behavior: 'smooth', block: 'start'});
+                            }
+                        });
+                    });
+                    
+                    // Navbar scroll effect
+                    window.addEventListener('scroll', function() {
+                        const _0x3u4v = document.querySelector('.navbar');
+                        if (window.scrollY > 50) {
+                            _0x3u4v.style.background = 'rgba(255, 255, 255, 0.98)';
+                            _0x3u4v.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                        } else {
+                            _0x3u4v.style.background = 'rgba(255, 255, 255, 0.95)';
+                            _0x3u4v.style.boxShadow = 'none';
+                        }
+                    });
+                    
+                    _0xa1b2._0x1o2p();
+                    
+                } catch(_0x5w6x) {
+                    // Silently handle initialization errors
+                }
+            });
+            
+            // Protected global functions
+            window.scrollToDocs = _0xa1b2._0x9m0n;
+            window.switchTab = _0xa1b2._0x4c5d;
+            window.scrollToTop = _0xa1b2._0x7k8l;
+            
+            // Integrity check
+            const _0x7y8z = setInterval(function() {
+                if (typeof window.scrollToDocs !== 'function' || 
+                    typeof window.switchTab !== 'function') {
+                    location.reload();
+                }
+            }, 5000);
+            
+        })();
+    </script>
+</body>
+
+</html>
