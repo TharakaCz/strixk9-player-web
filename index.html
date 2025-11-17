@@ -204,7 +204,7 @@
     </section>
 
     <!-- Configuration Guide Section -->
-    <section id="docs" class="config-guide">
+     <section id="docs" class="config-guide">
         <div class="container">
             <div class="section-header">
                 <h2>Configuration Guide</h2>
@@ -237,10 +237,7 @@
                                 <button class="copy-btn" data-code="include-code">Copy</button>
                             </div>
                             <code id="include-code">
-                                &lt;!-- Include player files --&gt;<br/>
-                                &lt;script src="main.js"&gt;&lt;/script&gt;<br/>
-                                &lt;link rel="stylesheet" href="style.css"&gt;
-                            </code>
+                                npm install strixk9-video-player
                         </div>
                     </div>
 
@@ -284,7 +281,9 @@
                                 &nbsp;&nbsp;theme: { color: "#19a383" }<br/>
                                 };<br/><br/>
                                 // Initialize player<br/>
-                                const player = new ModernVideoPlayer('#player', config);
+                                import StrixK9Player from 'strixk9-video-player';<br/   >
+
+                                const player = new StrixK9Player('#video-container', config);
                             </code>
                         </div>
                     </div>
@@ -376,7 +375,7 @@
                     <p>Enable subtitles, waveform, and additional player options</p>
                 </div>
                 <div class="config-body">
-                    <div class="config-step">
+                    <!-- <div class="config-step">
                         <div class="config-step-header">
                             <div class="step-badge">1</div>
                             <h4 class="config-step-title">Subtitles & Captions</h4>
@@ -399,11 +398,11 @@
                                 }
                             </code>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="config-step">
                         <div class="config-step-header">
-                            <div class="step-badge">2</div>
+                            <div class="step-badge">1</div>
                             <h4 class="config-step-title">Player Options</h4>
                         </div>
                         <p class="config-step-description">Configure player behavior and appearance.</p>
@@ -501,19 +500,12 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: "bottom end",<br/>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: "100px"<br/>
                                 &nbsp;&nbsp;&nbsp;&nbsp;},<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;subtitles: {<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enabled: true,<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tracks: [<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ src: "subs/en.vtt", srclang: "en", label: "English" }<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                                &nbsp;&nbsp;},<br/>
                                 &nbsp;&nbsp;theme: { color: "#19a383" },<br/>
                                 &nbsp;&nbsp;thumbnailPreview: true,<br/>
                                 &nbsp;&nbsp;waveform: true<br/>
                                 };<br/><br/>
                                 // Initialize player<br/>
-                                const player = new ModernVideoPlayer('#videoContainer', playerConfig);<br/><br/>
+                                const player = new StrixK9Player('#videoContainer', playerConfig);<br/><br/>
                                 // Available methods:<br/>
                                 // player.togglePlay(), player.setVolume(0.5)<br/>
                                 // player.seek(30), player.toggleFullscreen()
